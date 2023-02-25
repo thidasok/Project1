@@ -1,0 +1,345 @@
+.bar{
+    background-color: black;
+}
+h1,h2,ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.menu ul li{
+    float: left;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+
+}
+.menu ul li a:hover{
+    cursor: pointer;
+    background-color: lime;
+}
+.menu ul li ul.sub{
+    width: 100px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+}
+.menu ul li ul.sub li{
+    width: 100%;
+    position: relative;
+}
+.menu ul li ul.sub li a{
+    color: white;
+}
+.menu ul li:hover ul.sub{
+    display: block;
+}
+.menu ul li ul.sub li ul.sub2{
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+.menu ul li ul.sub li ul.sub2 li{
+    width: 100%;
+}
+.menu ul li ul.sub li ul.sub2 li a{
+    color: white;
+}
+.menu ul li ul.sub li:hover ul.sub2{
+    display: block;
+}
+.left-menu{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: chocolate;
+    left: -200px;
+    top: 50px;
+    transition: 0.3s;
+    z-index: 1;
+}
+.left-menu ul li a{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: white;
+}
+.left-menu ul li a:hover{
+    background-color: black;
+}
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.167);
+}
+.left-menu1{
+    margin-top: 20px;
+}
+.left-menu1 .box{
+    background-color: brown;
+}
+.left-menu1 .box ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 15px;
+
+}
+.left-menu1 .box ul li a:hover{
+    background-color: blueviolet;
+}
+.left-menu1 .box ul li a i{
+    float: right;
+    margin-top: 3px;
+}
+.left-menu1 .box ul li ul.sub-menu{
+    width: 90%;
+    background-color: black;
+    margin-left: 10px;
+}
+.slide{
+    margin-top: 20px;
+    height: 500px;
+}
+.slide .box{
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.nb{
+    position: absolute;
+   background-color: darkgreen;
+   color: white;
+   top: 50%;
+   cursor: pointer;
+   padding: 6px;
+   transform: translateY(-50%);
+   z-index: 1;
+}
+.btnnext{
+    right: 0;
+}
+.slide .box .slide1{
+    width: 100%;
+    height: 100%;
+    background-color: darkorchid;
+    position: relative;
+}
+.box1{
+    position: absolute;
+    background-color: brown;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+.slide .box .slide1 h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    padding: 7px;
+    background-color: rgba(227, 55, 90, 0.541);
+    color: white;
+    transform: translate(-50%,-50%);
+}
+.slide .box .slide1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .box .pageination{
+    position: absolute;
+    background-color: darkred;
+    bottom: 10px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    padding: 8px;
+    border-radius: 10px;
+}
+.slide .box .pageination ul li{
+    float: left;
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.slide .box .pageination ul li.active{
+    background-color: yellow;
+    color:black;
+}
+
+.item-box{
+    height: 250px;
+    margin-top: 20px;
+    padding: 0 5px;
+}
+.item-box .box{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item-box .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-box .box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: darkred;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+.item-box .box:hover img{
+    transform: scale(1.1);
+}
+.popup1{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.347);
+    z-index: 90;
+}
+.view-img{
+    width: 70%;
+    height: 90%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view-img img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.view-img .btn-close{
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fri-box{
+    width: 150px;
+    height: 300px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.589);
+    bottom: 10px;
+    right: 5px;
+    /* padding: 2px; */
+    overflow-y: scroll;
+}
+.fri-box ul li{
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.fri-box ul li:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.fri-box ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+}
+.fri-box ul li span{
+    color: white;
+    margin-left: 10px;
+}
+.fri-box h1{
+    font-size: 17px;
+    background-color: crimson;
+    border-bottom: 2px solid black;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+.chat{
+    position: fixed;
+   /* width: 250px; */
+    bottom: 10px;
+    right: 200px;
+    /* padding: 5px; */
+}
+.chat .chat-box{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0 #555;
+    float: right;
+    margin: 0 3px;
+    overflow: hidden;
+}
+.chat-box .chat-head{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(219, 208, 208);
+    padding: 5px;
+}
+.chat-box .chat-head img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.chat-box .chat-head span{
+    margin-left: 8px;
+}
+.chat-box .chat-head .btn-close-chat{
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.chat-box .chat-head .btn-close-chat:hover{
+    opacity: 1;
+}
